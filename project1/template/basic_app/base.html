@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-nav">
+      <a class="navbar-brand" href="{% url 'index3' %}">Home</a>
+      <a href="{% url 'admin:index' %}" class="nav-item nav-link">Admin-login</a>
+      <a href="{% url 'index1' %}" class="nav-item nav-link">Register</a>
+      <a href="{% url 'index4'%}" class="nav-item nav-link">Capestone</a>
+    </div>
+    </div>
+    </nav>
+
+  <div>
+      {% block body_block %}
+      <h4>Below is the Picture</h4>
+      <img src="{% static 'images/a.png' %}" alt="uh ho ..">
+      {% endblock %}
+
+    </div>
+  </body>
+</html>

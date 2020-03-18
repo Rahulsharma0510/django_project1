@@ -1,0 +1,20 @@
+#one{
+  text-align: center;
+  background-color:#0c122f;
+  color: #ffffff;
+  border: 40px solid #0045ff;
+  margin-top: 0px;
+  border-top: 0px;
+}
+
+p{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+h1 {
+  color:red;
+}
+
+.header {
+  color:white;
+}

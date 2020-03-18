@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% extends 'basic_app/base.html' %}
+{% block body_block %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/Capestone.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--  <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Lato|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Kelly+Slab|Lato|Libre+Franklin|Lobster|Oswald&display=swap" rel="stylesheet">
+-->
+<div class="container" id="one">
+  <div class="jumbotron">
+
+
+<h1>Welcome To The Landing Page</h1><br>
+<h2>We're a start up that does something</h2><br><br>
+<p id="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+<p id="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+
+<h2>Signup for our upcoming launch!</h2><br>
+
+ <form class="Capestone" action="Capestone_thankyou.html" method="get">
+   <label for="first">First Name:</label><br>
+   <input id="first" type="text" name="first" value=""><br><br>
+   <label for="last">Last Name:</label><br>
+   <input id="last"type="text" name="last" value=""><br><br>
+   <label for="email">Email:</label><br>
+   <input  id="email" type="email" name="Email" value=""><br><br>
+
+<input id="signup" type="submit" name="" value="Sign up">
+<!--  <button type="button" name="button">Signup</button> -->
+
+ </form>
+</div>
+</div>
+
+ {% endblock %}
